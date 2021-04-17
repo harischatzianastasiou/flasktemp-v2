@@ -16,6 +16,13 @@ apps:
     plugs: [network-bind]
     environment:
       FLASK_APP: flasktemp.py
+      
+hooks:
+  install:
+    plugs: [network, network-bind]
+  configure:
+    plugs: [network, network-bind]
+
 parts:
   flasktemp-v2:
     plugin: python
