@@ -1,4 +1,4 @@
-name: flasktemp2.0
+name: flasktemp-v2
 version: git
 summary: flaskapp
 description: |
@@ -9,7 +9,7 @@ confinement: strict
 
 apps:
 
-  flasktemp2.0:
+  flasktemp-v2:
     command: flasktemp.py 
     #daemon: simple
     #restart-condition: always
@@ -17,7 +17,7 @@ apps:
     environment:
       FLASK_APP: flasktemp.py
 parts:
-  flasktemp2.0:
+  flasktemp-v2:
     plugin: python
     python-version: python3
     source: .
