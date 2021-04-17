@@ -1,5 +1,5 @@
 name: flasktemp2.0
-version: '1.0.0'
+version: git
 summary: flaskapp
 description: |
   This is a very simple snap that displays a message on webpage server via python flask.
