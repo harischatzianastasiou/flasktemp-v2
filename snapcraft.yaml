@@ -1,0 +1,25 @@
+name: flasktemp-v2
+version: git
+summary: flaskapp
+description: |
+  This is a very simple snap that displays a message on webpage server via python flask.
+  If the IP address of the machine is 192.168.X.X then, from the same network you can access it in 5000 port. Like, http://192.168.X.X:5000
+base: core18 
+confinement: strict
+
+apps:
+
+  flasktemp-v2:
+    command: flasktemp.py 
+    #daemon: simple
+    #restart-condition: always
+    plugs: [network-bind]
+    environment:
+      FLASK_APP: flasktemp.py
+      
+parts:  
+  flasktemp-v2:
+    plugin: python
+    python-version: python3
+    source: .
+    python-packages : [flask]
