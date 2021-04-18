@@ -17,13 +17,7 @@ apps:
     environment:
       FLASK_APP: flasktemp.py
       
-parts:
-  configure-hook:
-    plugin: dump
-    source: configure-again/
-    organize:
-        configure: snap/hooks/configure
-        
+parts:  
   flasktemp-v2:
     plugin: python
     python-version: python3
