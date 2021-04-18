@@ -1,6 +1,0 @@
-#!/bin/sh -e
-
-# Initialize the sleep time to a default
-snapctl set sleep-time=5
-snapctl set ip-address=0.0.0.0
-snapctl set city_name="Thessaloniki"
