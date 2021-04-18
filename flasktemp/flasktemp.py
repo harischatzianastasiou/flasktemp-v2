@@ -82,10 +82,10 @@ def main():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("city_name", help="specify city name for openweatherapi")
     parser.add_argument("server", help="specify address and port")
     parser.add_argument("refresh", help="specify refresh rate",
                         type=int)
+    parser.add_argument("city_name", help="specify city name for openweatherapi")
     args = parser.parse_args()
     app.config.update (
        SERVER_NAME=args.server)
