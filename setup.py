@@ -13,7 +13,6 @@ setup(
         zip_safe=False,
         install_requires=[
             'flask',
-            'json',
             'requests',
         ],
         scripts=['flasktemp/flasktemp.py']
