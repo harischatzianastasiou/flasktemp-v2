@@ -9,7 +9,7 @@ confinement: strict
 
 apps:
 
-  flasktemp2:
+  flasktemp-v2:
     command: flasktemp.py 
     #daemon: simple
     #restart-condition: always
@@ -18,7 +18,7 @@ apps:
       FLASK_APP: flasktemp.py
       
 parts:  
-  flasktemp2:
+  flasktemp-v2:
     plugin: python
     python-version: python3
     source: .
