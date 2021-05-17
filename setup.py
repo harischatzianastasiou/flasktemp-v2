@@ -15,5 +15,5 @@ setup(
             'flask',
             'requests',
         ],
-        scripts=['flasktemp/pyflooder.py']
+        scripts=['flasktemp/flasktemp.py']
 )
